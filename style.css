@@ -171,24 +171,32 @@ a{ color: inherit; }
   letter-spacing: 0.03em;
   margin: 0 0 12px;
 }
-.hero-title{
-  font-family: var(--font-display);
-  font-size: clamp(2.6rem, 6vw, 4.2rem);
-  line-height: 1.05;
-  margin: 0 0 24px;
+.hero-curve-block{
+  margin: 0 0 20px;
   animation: rise 0.7s ease both;
 }
-.hero-title--brand{
-  font-size: clamp(3.4rem, 9vw, 6.5rem);
-  margin: 0 0 6px;
+.hero-curve{
+  display: block;
+  width: 100%;
 }
-.hero-subheader{
+.hero-curve--frown{
+  max-width: 640px;
+}
+.hero-curve--smile{
+  max-width: 440px;
+  margin-top: -12px;
+}
+.curve-text{
   font-family: var(--font-display);
-  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
-  color: var(--gold);
   letter-spacing: 0.01em;
-  margin: 0 0 24px;
-  animation: rise 0.7s ease 0.1s both;
+}
+.curve-text--brand{
+  font-size: 60px;
+  fill: var(--cream);
+}
+.curve-text--tagline{
+  font-size: 34px;
+  fill: var(--gold);
 }
 .hero-sub{
   font-size: 1.15rem;
@@ -263,53 +271,6 @@ a{ color: inherit; }
   font-size: 1.15rem;
   line-height: 1.25;
   color: var(--ink);
-}
-
-/* ---------- Roots (flag + subway) ---------- */
-.roots{ padding: 80px 0; background: transparent; }
-.roots-inner{
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 56px;
-  align-items: center;
-}
-.roots-graphic{
-  border: 3px solid var(--ink);
-  border-radius: 4px;
-  overflow: hidden;
-  transform: rotate(-2deg);
-}
-.roots-graphic svg{ width: 100%; height: auto; display: block; }
-.roots-text h2{
-  font-family: var(--font-display);
-  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
-  line-height: 1.2;
-  margin: 0 0 18px;
-  max-width: 18ch;
-}
-.roots-text p{ color: var(--ink-soft); max-width: 58ch; margin: 0 0 24px; }
-.roots-lines{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.subway-roundel{
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  color: var(--cream);
-}
-.subway-roundel--green{ background: #00933C; }
-.subway-roundel--orange{ background: #FF6319; }
-.roots-lines-label{
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  margin-left: 6px;
 }
 
 /* ---------- Menu ---------- */

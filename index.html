@@ -37,8 +37,20 @@
     <div class="hero-shape hero-shape--2"></div>
     <div class="wrap hero-inner">
       <p class="hero-kicker">Sugar Hill, Georgia</p>
-      <h1 class="hero-title hero-title--brand">Maria's Kitchen</h1>
-      <p class="hero-subheader">Made with Love</p>
+      <div class="hero-curve-block">
+        <svg class="hero-curve hero-curve--frown" viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maria's Kitchen">
+          <path id="frownPath" d="M 20,115 Q 320,30 620,115" fill="none"/>
+          <text>
+            <textPath href="#frownPath" startOffset="50%" text-anchor="middle" class="curve-text curve-text--brand">Maria's Kitchen</textPath>
+          </text>
+        </svg>
+        <svg class="hero-curve hero-curve--smile" viewBox="0 0 460 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Made with Love">
+          <path id="smilePath" d="M 15,25 Q 230,90 445,25" fill="none"/>
+          <text>
+            <textPath href="#smilePath" startOffset="50%" text-anchor="middle" class="curve-text curve-text--tagline">Made with Love</textPath>
+          </text>
+        </svg>
+      </div>
       <p class="hero-sub">Boricua flavor, cooked with love, served with attitude — starting with catering, headed straight for a food truck.</p>
       <div class="hero-actions">
         <a href="#catering" class="btn btn-primary">Book Catering</a>
@@ -65,35 +77,6 @@
       <div class="story-badge">
         <div class="badge-circle">
           <span>Est. in a<br>Bronx kitchen</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="roots" id="roots">
-    <div class="wrap roots-inner">
-      <div class="roots-graphic">
-        <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Puerto Rican flag">
-          <rect x="0" y="0" width="300" height="32" fill="var(--red)"/>
-          <rect x="0" y="32" width="300" height="32" fill="var(--cream)"/>
-          <rect x="0" y="64" width="300" height="32" fill="var(--red)"/>
-          <rect x="0" y="96" width="300" height="32" fill="var(--cream)"/>
-          <rect x="0" y="128" width="300" height="32" fill="var(--red)"/>
-          <polygon points="0,0 130,80 0,160" fill="var(--blue)"/>
-          <polygon points="45,80 55,58 65,80 87,80 69,94 76,116 55,103 34,116 41,94 23,80"
-                    fill="var(--cream)" transform="translate(0,0) scale(0.62) translate(24,10)"/>
-        </svg>
-      </div>
-      <div class="roots-text">
-        <p class="eyebrow">Two Cities, One Kitchen</p>
-        <h2>Puerto Rico raised the recipes. The Bronx raised the attitude.</h2>
-        <p>Every dish carries both. The flavor comes straight from the island — sofrito, adobo, achiote. The energy comes from the trains, the blocks, and the kitchens of the Bronx, where Maria learned to cook loud and cook proud.</p>
-        <div class="roots-lines">
-          <span class="subway-roundel subway-roundel--green">6</span>
-          <span class="subway-roundel subway-roundel--green">4</span>
-          <span class="subway-roundel subway-roundel--orange">B</span>
-          <span class="subway-roundel subway-roundel--orange">D</span>
-          <span class="roots-lines-label">The lines that run through home</span>
         </div>
       </div>
     </div>
