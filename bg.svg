@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <style>
+      .bg { fill: #FFF6EA; }
+      .red { fill: #D62828; }
+      .blue { fill: #023E8A; }
+      .gold { fill: #F5A300; }
+      .white { fill: #ffffff; }
+      .green { fill: #00933C; }
+      .orange { fill: #FF6319; }
+      .opacity-group { opacity: 0.12; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="800"/>
+
+  <g class="opacity-group">
+    <!-- PR Flag stripes -->
+    <rect class="red" x="0" y="0" width="1200" height="160"/>
+    <rect class="white" x="0" y="160" width="1200" height="160"/>
+    <rect class="red" x="0" y="320" width="1200" height="160"/>
+    <rect class="white" x="0" y="480" width="1200" height="160"/>
+    <rect class="red" x="0" y="640" width="1200" height="160"/>
+
+    <!-- PR Flag Triangle -->
+    <polygon class="blue" points="0,0 600,400 0,800"/>
+
+    <!-- PR Flag Star -->
+    <polygon class="white" points="180,300 202.5,369.1 275.1,369.1 216.4,411.8 238.8,480.9 180,438.2 121.2,480.9 143.6,411.8 84.9,369.1 157.5,369.1" />
+
+    <!-- Subway Roundels floating -->
+    <g transform="translate(680, 100)">
+      <circle class="green" cx="40" cy="40" r="40"/>
+      <text x="40" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="45" fill="#ffffff" text-anchor="middle">6</text>
+    </g>
+
+    <g transform="translate(900, 200)">
+      <circle class="green" cx="40" cy="40" r="40"/>
+      <text x="40" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="45" fill="#ffffff" text-anchor="middle">4</text>
+    </g>
+
+    <g transform="translate(750, 320)">
+      <circle class="orange" cx="40" cy="40" r="40"/>
+      <text x="40" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="45" fill="#ffffff" text-anchor="middle">B</text>
+    </g>
+
+    <g transform="translate(1000, 420)">
+      <circle class="orange" cx="40" cy="40" r="40"/>
+      <text x="40" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="45" fill="#ffffff" text-anchor="middle">D</text>
+    </g>
+
+    <!-- NYC Skyline Silhouette at the bottom, overlapping the stripes -->
+    <path class="blue" d="M0,800 L0,700 L40,700 L40,620 L80,620 L80,720 L120,720 L120,550 L180,550 L180,680 L220,680 L220,500 L280,500 L280,700 L340,700 L340,400 L360,400 L360,350 L380,350 L380,400 L400,400 L400,650 L460,650 L460,520 L520,520 L520,750 L580,750 L580,580 L640,580 L640,700 L700,700 L700,450 L780,450 L780,680 L840,680 L840,550 L900,550 L900,720 L960,720 L960,480 L1020,480 L1020,650 L1080,650 L1080,520 L1140,520 L1140,700 L1200,700 L1200,800 Z" />
+
+  </g>
+</svg>
