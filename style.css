@@ -19,6 +19,10 @@ html{ scroll-behavior: smooth; }
 body{
   margin: 0;
   background: var(--cream);
+  background-image: url('bg.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.5;
@@ -89,7 +93,9 @@ a{ color: inherit; }
 /* ---------- Header ---------- */
 .site-header{
   position: sticky; top: 0; z-index: 100;
-  background: var(--cream);
+  background: transparent;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 3px solid var(--ink);
 }
 .header-inner{
@@ -260,7 +266,7 @@ a{ color: inherit; }
 }
 
 /* ---------- Roots (flag + subway) ---------- */
-.roots{ padding: 80px 0; background: var(--cream); }
+.roots{ padding: 80px 0; background: transparent; }
 .roots-inner{
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -492,7 +498,7 @@ a{ color: inherit; }
   .nav{
     position: absolute;
     top: 100%; left: 0; right: 0;
-    background: var(--cream);
+    background: var(--cream); /* keep this one cream or slightly transparent for readability */
     border-bottom: 3px solid var(--ink);
     flex-direction: column;
     align-items: flex-start;
