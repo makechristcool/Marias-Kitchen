@@ -1,28 +1,11 @@
-// Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const nav = document.getElementById('nav');
-
-navToggle.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  navToggle.setAttribute('aria-expanded', String(isOpen));
-});
-
-nav.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-  });
-});
-
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Contact form: placeholder handling until a real form backend is connected.
-// See README.md for how to wire this up to Formspree, Netlify Forms, etc.
-const form = document.getElementById('contactForm');
-const status = document.getElementById('formStatus');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  status.textContent = "Thanks! This form isn't connected yet — see README.md to hook it up to email.";
-});
+const toggle=document.getElementById('menuToggle');
+const nav=document.getElementById('siteNav');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const languageToggle=document.getElementById('languageToggle');
+let language='en';
+languageToggle.addEventListener('click',()=>{language=language==='en'?'es':'en';document.documentElement.lang=language;document.querySelectorAll('[data-en][data-es]').forEach(el=>{el.innerHTML=el.dataset[language]});languageToggle.textContent=language==='en'?'ES':'EN';languageToggle.setAttribute('aria-label',language==='en'?'Cambiar a español':'Switch to English')});
+const form=document.getElementById('inquiryForm');
+const status=document.getElementById('formStatus');
+form.addEventListener('submit',event=>{event.preventDefault();status.textContent='Thanks! This design preview is ready, but the form is not connected to an inbox yet. Connect Formspree, Netlify Forms, or your preferred service before publishing.';});
