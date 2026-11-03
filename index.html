@@ -1,215 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maria's Kitchen — Authentic Puerto Rican Cuisine | Sugar Hill, GA</title>
-<meta name="description" content="Maria's Kitchen serves authentic Puerto Rican home cooking in Sugar Hill, GA. Catering now, a food truck soon. Pernil, arroz, habichuelas, tostones and more.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b22">
+  <title>Maria's Kitchen | Puerto Rican Flavor, Made with Love</title>
+  <meta name="description" content="Discover Maria's Kitchen: Puerto Rican home cooking, catering for your celebrations, and a food truck dream in the making in Sugar Hill, Georgia.">
+  <meta property="og:title" content="Maria's Kitchen | Puerto Rican Flavor, Made with Love">
+  <meta property="og:description" content="Boricua flavor, family traditions, and food made for sharing. Explore the menu and ask about catering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="grain"></div>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#top" class="logo">Maria's<span>Kitchen</span></a>
-    <nav class="nav" id="nav">
-      <a href="#menu">Menu</a>
-      <a href="#story">Our Story</a>
-      <a href="#catering">Catering</a>
-      <a href="#truck">The Truck</a>
-      <a href="#contact" class="nav-cta">Book Us</a>
+  <div class="announcement"><span data-en="Puerto Rican flavor, made for sharing" data-es="Sabor puertorriqueño, hecho para compartir">Puerto Rican flavor, made for sharing</span><span class="announcement-dot">✦</span><span data-en="Catering in Sugar Hill, Georgia" data-es="Catering en Sugar Hill, Georgia">Catering in Sugar Hill, Georgia</span></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Maria's Kitchen home"><span class="brand-mark">MK</span><span class="brand-name">Maria's <b>Kitchen</b><small>PUERTO RICAN COMFORT FOOD</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="siteNav">
+      <a href="#menu" data-en="Menu" data-es="Menú">Menu</a><a href="#story" data-en="Our Story" data-es="Nuestra historia">Our Story</a><a href="#catering" data-en="Catering" data-es="Catering">Catering</a><a href="#truck" data-en="The Truck" data-es="El camión">The Truck</a>
+      <div class="nav-tools"><button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">ES</button><a class="button button-small" href="#contact" data-en="Let's Talk" data-es="Hablemos">Let's Talk</a></div>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+  </header>
 
-<main id="top">
-
-  <section class="hero">
-    <div class="hero-shape hero-shape--1"></div>
-    <div class="hero-shape hero-shape--2"></div>
-    <div class="wrap hero-inner">
-      <p class="hero-kicker">Sugar Hill, Georgia</p>
-      <div class="hero-curve-block">
-        <svg class="hero-curve hero-curve--frown" viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maria's Kitchen">
-          <path id="frownPath" d="M 20,115 Q 320,30 620,115" fill="none"/>
-          <text>
-            <textPath href="#frownPath" startOffset="50%" text-anchor="middle" class="curve-text curve-text--brand">Maria's Kitchen</textPath>
-          </text>
-        </svg>
-        <svg class="hero-curve hero-curve--smile" viewBox="0 0 640 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Made with Love">
-          <path id="smilePath" d="M 20,30 Q 320,100 620,30" fill="none"/>
-          <text>
-            <textPath href="#smilePath" startOffset="50%" text-anchor="middle" class="curve-text curve-text--tagline">Made with Love</textPath>
-          </text>
-        </svg>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="A colorful table of Latin-inspired food"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light"><span class="eyebrow-line"></span><span data-en="A taste of home in every bite" data-es="Un sabor de hogar en cada bocado">A taste of home in every bite</span></p>
+        <h1 data-en="Big Boricua flavor.<br><em>Made with love.</em>" data-es="Gran sabor boricua.<br><em>Hecho con amor.</em>">Big Boricua flavor.<br><em>Made with love.</em></h1>
+        <p class="hero-copy" data-en="From family favorites to your table, Maria's Kitchen brings the warmth, soul, and bold flavors of Puerto Rican cooking to every gathering." data-es="De los favoritos de la familia a tu mesa, Maria's Kitchen lleva la calidez y los sabores de Puerto Rico a cada celebración.">From family favorites to your table, Maria's Kitchen brings the warmth, soul, and bold flavors of Puerto Rican cooking to every gathering.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#menu" data-en="Explore the Menu" data-es="Explora el menú">Explore the Menu <span>↗</span></a><a class="text-link light-link" href="#catering" data-en="Plan your event" data-es="Planea tu evento">Plan your event <span>→</span></a></div>
+        <div class="hero-note"><span class="note-star">✳</span><span data-en="Family roots. Island flavor. Georgia hospitality." data-es="Raíces familiares. Sabor isleño. Hospitalidad de Georgia.">Family roots. Island flavor. Georgia hospitality.</span></div>
       </div>
-      <p class="hero-sub">Boricua flavor, cooked with love, served with attitude — starting with catering, headed straight for a food truck.</p>
-      <div class="hero-actions">
-        <a href="#catering" class="btn btn-primary">Book Catering</a>
-        <a href="#menu" class="btn btn-ghost">See the Menu</a>
+      <div class="hero-stamp"><span>HECHO</span><b>con</b><span>AMOR</span><i>✦</i></div>
+      <a class="scroll-cue" href="#intro"><span></span><span data-en="SCROLL TO SAVOR" data-es="SIGUE DESCUBRIENDO">SCROLL TO SAVOR</span></a>
+    </section>
+
+    <section class="intro section-pad" id="intro">
+      <div class="intro-label"><span class="eyebrow">01 / THE GOOD STUFF</span><span class="small-rule"></span></div>
+      <div class="intro-main"><h2 data-en="A little island soul<br>goes a <em>long way.</em>" data-es="Un poquito de sabor isleño<br>llega <em>muy lejos.</em>">A little island soul<br>goes a <em>long way.</em></h2><p data-en="Think slow-roasted favorites, golden plantains, soulful rice, and the kind of food that brings everybody back to the table. That's the Maria's Kitchen way." data-es="Piensa en carnes asadas lentamente, plátanos dorados, arroz lleno de sabor y comida que reúne a todos alrededor de la mesa. Así es Maria's Kitchen.">Think slow-roasted favorites, golden plantains, soulful rice, and the kind of food that brings everybody back to the table. That's the Maria's Kitchen way.</p></div>
+      <div class="intro-pillars"><div><span>01</span><b data-en="Made with heart" data-es="Hecho con cariño">Made with heart</b><small data-en="Family-inspired recipes" data-es="Recetas inspiradas en la familia">Family-inspired recipes</small></div><div><span>02</span><b data-en="Full of flavor" data-es="Lleno de sabor">Full of flavor</b><small data-en="Puerto Rican favorites" data-es="Favoritos puertorriqueños">Puerto Rican favorites</small></div><div><span>03</span><b data-en="Made to gather" data-es="Para compartir">Made to gather</b><small data-en="Catering for your moments" data-es="Catering para tus momentos">Catering for your moments</small></div></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading"><div><span class="eyebrow">02 / FROM OUR KITCHEN</span><h2 data-en="The <em>favorites.</em>" data-es="Los <em>favoritos.</em>">The <em>favorites.</em></h2></div><p data-en="A taste of what's cooking. Menus can be customized for your gathering." data-es="Una muestra de lo que cocinamos. Podemos personalizar el menú para tu evento.">A taste of what's cooking. Menus can be customized for your gathering.</p></div>
+      <div class="food-grid">
+        <article class="food-card food-card-large"><div class="food-photo pernil"></div><div class="food-caption"><span class="food-number">01</span><div><h3>Pernil</h3><p data-en="Slow-roasted, tender, and seasoned with love." data-es="Asado lentamente, tierno y sazonado con amor.">Slow-roasted, tender, and seasoned with love.</p></div><span class="food-arrow">↗</span></div></article>
+        <article class="food-card"><div class="food-photo rice"></div><div class="food-caption"><span class="food-number">02</span><div><h3>Arroz Amarillo</h3><p data-en="Sazón, sofrito, and comfort in every spoonful." data-es="Sazón, sofrito y cariño en cada cucharada.">Sazón, sofrito, and comfort in every spoonful.</p></div></div></article>
+        <article class="food-card"><div class="food-photo plantains"></div><div class="food-caption"><span class="food-number">03</span><div><h3>Tostones & Maduros</h3><p data-en="A little crispy, a little sweet." data-es="Un poquito crujientes, un poquito dulces.">A little crispy, a little sweet.</p></div></div></article>
+        <article class="food-card"><div class="food-photo chicken"></div><div class="food-caption"><span class="food-number">04</span><div><h3>Chicken Cutlets</h3><p data-en="Golden, crispy, and always a crowd-pleaser." data-es="Dorados, crujientes y favoritos de todos.">Golden, crispy, and always a crowd-pleaser.</p></div></div></article>
+        <article class="food-card menu-cta"><span class="menu-cta-icon">✳</span><h3 data-en="Your table.<br>Your favorites." data-es="Tu mesa.<br>Tus favoritos.">Your table.<br>Your favorites.</h3><p data-en="Ask us about a custom menu for your next celebration." data-es="Pregúntanos por un menú personalizado para tu próxima celebración.">Ask us about a custom menu for your next celebration.</p><a class="text-link" href="#contact" data-en="Ask about the menu →" data-es="Pregunta por el menú →">Ask about the menu →</a></article>
       </div>
-    </div>
-  </section>
+      <p class="menu-footnote" data-en="Menu and availability may vary. Reach out for current offerings, portions, and pricing." data-es="El menú y la disponibilidad pueden variar. Contáctanos para conocer las opciones y precios actuales.">Menu and availability may vary. Reach out for current offerings, portions, and pricing.</p>
+    </section>
 
-  <section class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>PERNIL</span><span>•</span><span>ARROZ AMARILLO</span><span>•</span><span>TOSTONES</span><span>•</span><span>HABICHUELAS</span><span>•</span><span>MADUROS</span><span>•</span><span>CHULETAS</span><span>•</span>
-      <span>PERNIL</span><span>•</span><span>ARROZ AMARILLO</span><span>•</span><span>TOSTONES</span><span>•</span><span>HABICHUELAS</span><span>•</span><span>MADUROS</span><span>•</span><span>CHULETAS</span><span>•</span>
-    </div>
-  </section>
+    <section class="story-section section-pad" id="story">
+      <div class="story-photo"><div class="story-photo-overlay"><span>CON</span><b>cariño</b><span>SIEMPRE</span></div></div>
+      <div class="story-copy"><span class="eyebrow">03 / THE STORY BEHIND THE FLAVOR</span><h2 data-en="From a Bronx kitchen<br>to a <em>Georgia table.</em>" data-es="De una cocina del Bronx<br>a una <em>mesa en Georgia.</em>">From a Bronx kitchen<br>to a <em>Georgia table.</em></h2><p data-en="Maria learned to cook close to family, with sofrito on the stove and stories around the kitchen. That spirit traveled from the Bronx to Sugar Hill, Georgia—and it's still at the heart of every dish." data-es="Maria aprendió a cocinar cerca de su familia, con sofrito en la estufa e historias en la cocina. Ese espíritu viajó del Bronx a Sugar Hill, Georgia, y sigue presente en cada plato.">Maria learned to cook close to family, with sofrito on the stove and stories around the kitchen. That spirit traveled from the Bronx to Sugar Hill, Georgia—and it's still at the heart of every dish.</p><p data-en="Today, Maria's Kitchen is bringing those Puerto Rican family favorites to parties, offices, reunions, and the moments worth celebrating." data-es="Hoy, Maria's Kitchen lleva esos sabores familiares puertorriqueños a fiestas, oficinas, reuniones y momentos que merecen celebrarse.">Today, Maria's Kitchen is bringing those Puerto Rican family favorites to parties, offices, reunions, and the moments worth celebrating.</p><a class="text-link" href="#catering" data-en="Bring us to your table →" data-es="Llévanos a tu mesa →">Bring us to your table →</a><div class="signature">Made with love, Maria <span>♥</span></div></div>
+    </section>
 
-  <section class="story" id="story">
-    <div class="wrap story-inner">
-      <div class="story-text">
-        <p class="eyebrow">Our Story</p>
-        <h2>From a Bronx kitchen to a Georgia table.</h2>
-        <p>Maria learned to cook the way most of us do — standing on a stool next to family, stirring sofrito, arguing about how much sazón is too much sazón. She brought that kitchen from the Bronx down to Sugar Hill, and it hasn't lost an ounce of its energy.</p>
-        <p>Every pot of arroz con gandules, every slow-roasted pernil, still gets made the same way it always has: fresh, seasoned right, and made for sharing. We're building this as a catering business first, because we want to cook for your parties, your offices, your family reunions — and we're saving up for the truck that'll let us bring it to the street.</p>
-      </div>
-      <div class="story-badge">
-        <div class="badge-circle">
-          <span>Est. in a<br>Bronx kitchen</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="catering-section section-pad" id="catering">
+      <div class="catering-top"><span class="eyebrow light">04 / LET'S CELEBRATE</span><span class="catering-mark">✳</span></div>
+      <div class="catering-layout"><div><h2 data-en="Good food makes<br><em>good memories.</em>" data-es="La buena comida crea<br><em>grandes recuerdos.</em>">Good food makes<br><em>good memories.</em></h2><p data-en="From birthdays and family reunions to office lunches and special celebrations, let's make your gathering taste like something special." data-es="Desde cumpleaños y reuniones familiares hasta almuerzos de oficina y celebraciones especiales, hagamos que tu evento tenga un sabor inolvidable.">From birthdays and family reunions to office lunches and special celebrations, let's make your gathering taste like something special.</p><a class="button button-gold" href="#contact" data-en="Start a catering inquiry" data-es="Solicita información">Start a catering inquiry <span>↗</span></a></div><div class="catering-details"><div><span>01</span><b data-en="Tell us the occasion" data-es="Cuéntanos la ocasión">Tell us the occasion</b><small data-en="Date, location, and guest count" data-es="Fecha, lugar y número de invitados">Date, location, and guest count</small></div><div><span>02</span><b data-en="Let's plan your menu" data-es="Planeemos tu menú">Let's plan your menu</b><small data-en="Your favorites, your way" data-es="Tus favoritos, a tu manera">Your favorites, your way</small></div><div><span>03</span><b data-en="Make it a moment" data-es="Hagamos un momento especial">Make it a moment</b><small data-en="We'll talk through the details" data-es="Coordinamos todos los detalles">We'll talk through the details</small></div></div></div>
+    </section>
 
-  <section class="menu" id="menu">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--light">The Menu</p>
-      <h2 class="menu-title">What's cooking</h2>
-      <p class="menu-sub">A rotating spread of Puerto Rican staples, made fresh for every order. Ask about custom menus for your event.</p>
+    <section class="truck-section section-pad" id="truck"><div class="truck-copy"><span class="eyebrow">05 / THE NEXT CHAPTER</span><h2 data-en="A little more<br><em>room to roll.</em>" data-es="Un poco más de espacio<br><em>para rodar.</em>">A little more<br><em>room to roll.</em></h2><p data-en="The food truck is part of the dream. We're building toward the day we can bring Puerto Rican street-food favorites to even more neighbors around Georgia. Stay close for updates." data-es="El food truck es parte del sueño. Estamos trabajando para llevar los sabores callejeros de Puerto Rico a más vecinos en Georgia. ¡Mantente pendiente!">The food truck is part of the dream. We're building toward the day we can bring Puerto Rican street-food favorites to even more neighbors around Georgia. Stay close for updates.</p><a class="text-link" href="#contact" data-en="Stay in the loop →" data-es="Mantente al tanto →">Stay in the loop →</a></div><div class="truck-art"><div class="sun"></div><div class="truck-illustration"><div class="truck-top"></div><div class="truck-body"><span>MARIA'S<br><b>KITCHEN</b></span><i>✳</i></div><div class="truck-window"></div><div class="truck-wheel wheel-one"></div><div class="truck-wheel wheel-two"></div></div><span class="truck-art-note">SABOR SOBRE RUEDAS</span></div></section>
 
-      <div class="menu-grid">
-        <article class="dish">
-          <h3>Arroz Amarillo</h3>
-          <p>Yellow rice, seasoned with sazón and a little sofrito, cooked low and slow.</p>
-        </article>
-        <article class="dish">
-          <h3>Arroz Blanco</h3>
-          <p>Simple white rice, done right — the base for everything else on the plate.</p>
-        </article>
-        <article class="dish">
-          <h3>Pernil</h3>
-          <p>Slow-roasted pork shoulder, marinated overnight and roasted until it falls apart.</p>
+    <section class="contact-section section-pad" id="contact"><div class="contact-intro"><span class="eyebrow">06 / SAY HOLA</span><h2 data-en="Let's make<br><em>something delicious.</em>" data-es="Preparemos algo<br><em>delicioso.</em>">Let's make<br><em>something delicious.</em></h2><p data-en="Have a question or planning an event? Share a few details and let's start the conversation." data-es="¿Tienes preguntas o planeas un evento? Comparte algunos detalles y comencemos la conversación.">Have a question or planning an event? Share a few details and let's start the conversation.</p><div class="contact-location"><span>✳</span><div><b>Maria's Kitchen</b><small>Sugar Hill, Georgia</small></div></div><p class="contact-reminder" data-en="Contact details and the inquiry form need to be connected before launch." data-es="Los datos de contacto y el formulario deben configurarse antes del lanzamiento.">Contact details and the inquiry form need to be connected before launch.</p></div>
+      <form class="inquiry-form" id="inquiryForm"><div class="form-heading"><span data-en="CATERING & GENERAL INQUIRIES" data-es="CATERING Y CONSULTAS">CATERING & GENERAL INQUIRIES</span><span>✳</span></div><label><span data-en="Your name" data-es="Tu nombre">Your name</span><input name="name" autocomplete="name" required placeholder="Maria Garcia"></label><label><span data-en="Email address" data-es="Correo electrónico">Email address</span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label><div class="form-row"><label><span data-en="Event date (if applicable)" data-es="Fecha del evento (si aplica)">Event date (if applicable)</span><input type="date" name="date"></label><label><span data-en="Number of guests" data-es="Número de invitados">Number of guests</span><input type="number" name="guests" min="1" placeholder="50"></label></div><label><span data-en="Tell us what you're planning" data-es="Cuéntanos qué estás planeando">Tell us what you're planning</span><textarea name="message" rows="4" required placeholder="A birthday, family gathering, office lunch..."></textarea></label><button class="button button-dark" type="submit" data-en="Prepare inquiry →" data-es="Preparar consulta →">Prepare inquiry →</button><p class="form-status" id="formStatus" role="status" aria-live="polite"></p></form>
+    </section>
+  </main>
 
-        </article>
-        <article class="dish">
-          <h3>Chicken Cutlets</h3>
-          <p>Breaded chicken cutlets, fried golden and crispy on the outside, juicy inside.</p>
-        </article>
-        <article class="dish">
-          <h3>Tostones</h3>
-          <p>Green plantains, smashed and fried twice for that perfect crunch.</p>
-        </article>
-        <article class="dish">
-          <h3>Maduros</h3>
-          <p>Sweet ripe plantains, pan-fried until caramelized at the edges.</p>
-        </article>
-        <article class="dish">
-          <h3>Habichuelas</h3>
-          <p>Stewed beans, simmered in a rich sofrito-based broth. The soul of the plate.</p>
-        </article>
-        <article class="dish dish--cta">
-          <h3>Planning an event?</h3>
-          <p>We build full menus for parties, offices, and family gatherings.</p>
-          <a href="#catering" class="dish-link">Talk catering →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="catering" id="catering">
-    <div class="wrap catering-inner">
-      <div class="catering-text">
-        <p class="eyebrow">Catering</p>
-        <h2>We'll cook for your whole crowd.</h2>
-        <p>From birthday parties to office lunches to family reunions, Maria's Kitchen caters events of all sizes across Sugar Hill and the surrounding area. Tell us your headcount, your budget, and your must-have dish — we'll handle the rest.</p>
-        <ul class="catering-list">
-          <li>Custom menus for any size event</li>
-          <li>Drop-off, set-up, or full service</li>
-          <li>Vegetarian and mild/spicy options available</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary">Request a Quote</a>
-      </div>
-      <div class="catering-card">
-        <p class="catering-card-label">Booking window</p>
-        <p class="catering-card-big">2 weeks</p>
-        <p class="catering-card-note">Recommended notice for most events — but ask us, we'll always try to make it work.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="truck" id="truck">
-    <div class="wrap truck-inner">
-      <p class="eyebrow eyebrow--light">Coming Next</p>
-      <h2 class="truck-title">The truck is on its way.</h2>
-      <p class="truck-sub">Catering is just phase one. Maria's Kitchen is saving up, planning routes, and getting ready to bring Puerto Rican street food straight to Sugar Hill's sidewalks. Follow along so you're first in line when we roll out.</p>
-      <div class="truck-graphic" role="img" aria-label="Illustration of a food truck">
-        <svg viewBox="0 0 320 140" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="40" width="200" height="70" rx="6" fill="var(--cream)"/>
-          <rect x="210" y="60" width="70" height="50" rx="6" fill="var(--gold)"/>
-          <rect x="20" y="50" width="70" height="35" rx="4" fill="var(--blue)"/>
-          <rect x="100" y="50" width="70" height="35" rx="4" fill="var(--red)"/>
-          <circle cx="60" cy="115" r="16" fill="var(--ink)"/>
-          <circle cx="60" cy="115" r="6" fill="var(--cream)"/>
-          <circle cx="230" cy="115" r="16" fill="var(--ink)"/>
-          <circle cx="230" cy="115" r="6" fill="var(--cream)"/>
-          <rect x="10" y="105" width="290" height="6" fill="var(--ink)" opacity="0.15"/>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="wrap contact-inner">
-      <p class="eyebrow">Get In Touch</p>
-      <h2>Let's talk about your event.</h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p><span>Location</span>Sugar Hill, GA</p>
-          <p><span>Phone</span>(000) 000-0000</p>
-          <p><span>Email</span>hello@marias-kitchen.example</p>
-          <p><span>Instagram</span>@marias.kitchen</p>
-          <p class="contact-note">Placeholder contact info — swap this out with your real details in index.html.</p>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <label>
-            Name
-            <input type="text" name="name" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            Tell us about your event
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary btn-block">Send Request</button>
-          <p class="form-status" id="formStatus" role="status"></p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <p class="logo logo--footer">Maria's<span>Kitchen</span></p>
-    <p>&copy; <span id="year"></span> Maria's Kitchen. Sugar Hill, GA.</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <footer class="footer"><div class="footer-main"><a class="brand brand-footer" href="#home"><span class="brand-mark">MK</span><span class="brand-name">Maria's <b>Kitchen</b><small>PUERTO RICAN COMFORT FOOD</small></span></a><p data-en="Island soul. Family heart. Georgia home." data-es="Alma isleña. Corazón familiar. Hogar en Georgia.">Island soul. Family heart. Georgia home.</p><a class="back-top" href="#home">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> Maria's Kitchen</span><span>Made with <b>♥</b> and a little sazón.</span><span>SUGAR HILL, GA</span></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
